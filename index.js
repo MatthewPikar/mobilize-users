@@ -15,8 +15,14 @@ _.extend(options, {
     resourceName: 'users',
     resourceFormat: {
         required$: ['name'],
-        only$: ['id', 'name', 'image'],
-        name: 'string$'
+        only$: ['id','name','created','modified','image'],
+        id: 'string$',
+        name: 'string$',
+        created: 'string$',
+        modified: 'string$',
+        image: 'string$',
+        interests: 'array$',
+        actions: 'array$'
     }
 })
 
